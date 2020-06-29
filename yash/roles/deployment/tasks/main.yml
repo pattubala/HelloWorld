@@ -1,0 +1,13 @@
+---
+# tasks file for deployment
+
+- name: downloading artifact
+  get_url: 
+    url: http://{{ nexus_ip }}/repository/nexus01/maven-org/mybatis/maven-jpetstore/maven-6.0.2-SNAPSHOT/maven-jpetstore-maven-6.0.2-20200524.083734-1.war
+    dest: "{{ download_war_path }}"
+
+- name: moving the artifact
+  command: "mv /tmp/maven-jpetstore-maven-6.0.2-20200524.083734-1.war {{ tomcat_directory }}/webapps/jpetstore.war"
+
+- name: start tomcat
+  shell: sh /opt/apache-tomcat-9.0.36/bin/startup.sh

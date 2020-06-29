@@ -1,0 +1,9 @@
+---
+ - hosts: all
+   gather_facts: yes
+   become: true
+   become_method: sudo
+   roles:
+      - java
+      - tomcat 
+      - deployment   

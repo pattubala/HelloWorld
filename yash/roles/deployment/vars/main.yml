@@ -1,0 +1,5 @@
+---
+# vars file for deployment
+tomcat_directory: /opt/apache-tomcat-9.0.36
+nexus_ip: 18.224.56.17:8081
+download_war_path: /tmp
