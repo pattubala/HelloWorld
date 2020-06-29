@@ -1,0 +1,9 @@
+[submodule "chef-repo/cookbooks/Install-Tomcat"]
+	path = chef-repo/cookbooks/Install-Tomcat
+	url = https://github.com/pattubala/HelloWorld.git
+[submodule "chef-repo/cookbooks/Install_Java"]
+	path = chef-repo/cookbooks/Install_Java
+	url = https://github.com/pattubala/HelloWorld.git
+[submodule "chef-repo/cookbooks/tomcat-deploy"]
+	path = chef-repo/cookbooks/tomcat-deploy
+	url = https://github.com/pattubala/HelloWorld.git
